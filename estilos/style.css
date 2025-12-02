@@ -21,7 +21,7 @@
   --destaque: #0077ff;
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
-}
+} /*propriedade root para utilização de variaveis para estilizar o portifolio com seleção de cores*/
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,16 +34,16 @@ header {
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
-  display: flex;
-  justify-content: flex-end;
+  display: flex; /*display flexivel*/
+  justify-content: flex-end; /*itens do menu do lado direito da propriedade nav e centralizados conforme abaixo descrito em codigo*/
   align-content: center;
 
 }
 
 nav#menu ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
+  list-style: none; /*removido sublinhamento dos itens*/
+  display: flex;/*display flexivel*/
+  gap: 10px;/*espaçamento das linhas*/
 }
 
 nav#menu a {
