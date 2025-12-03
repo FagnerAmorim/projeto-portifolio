@@ -271,7 +271,21 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;/*propriedade height: fit-content defina que a altura de um elemento deve ajustar-se ao seu conteúdo interno, mas sem exceder os limites do seu conteúdo. É uma forma de garantir que o elemento ocupe o espaço necessário para o que contém, de maneira flexível e responsiva*/
+    position: sticky;/*opção para deixar a barra de menu fixa para rolagem*/
+    top: 65px;/*opção de ajuste final para fichar a ficha de apresentação durante scroll(descida da pagina)*/
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
