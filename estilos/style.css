@@ -241,6 +241,15 @@ article h2 {
   border-radius: 8px;
 }
 
+#projeto-container .titulo {
+  color: var(--destaque);
+  transition: color 0.5s;
+}
+
+#projeto-container .titulo:hover {
+  color: var(--destaque-inverso);
+} /*propriedade a e a:hover para estilizar ao clicar e encostar o mouse e tambem para não alterar a cor apos o clik nas redes sociais*/
+
 footer {
   background-color: var(--destaque);
   color: var(--destaque-inverso);
