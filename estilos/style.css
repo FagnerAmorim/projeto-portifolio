@@ -125,7 +125,7 @@ article {
 
 article h2 {
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -177,7 +177,38 @@ article h2 {
   height: 100%;
   background-color: var(--destaque);
   border-radius: 4px;
-}/*barra de fora*/
+} /*barra de fora*/
+
+#formacao-container {
+  display: flex;/*inicialmente vai ficar com linhas de coluna*/
+  flex-direction: column-reverse;/*ao aplicar essa propriedade aplica-se apenas uma coluna, revertendo as qualificações por ordem da atual*/
+  gap: 20px;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s border-color 0.5s ;/*propriedade para deixar o hover suave ao encostar o mouse*/
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer; /*cursor no formato de mao*/
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
+}
 
 @media screen and (min-width: 768px) {
   
