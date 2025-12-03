@@ -37,6 +37,9 @@ header {
   display: flex; /*display flexivel*/
   justify-content: flex-end; /*itens do menu do lado direito da propriedade nav e centralizados conforme abaixo descrito em codigo*/
   align-content: center;
+  position: sticky; /*opção para deixar a barra de menu fixa para rolagem*/
+  top: 0;/*opção de ajuste final para fichar a barra do menu durante scroll(descida da pagina)*/
+  z-index: 1; /*essa propriedade faz com que o iframe, arquivo de video do youtube, passe por dentro da barra ao efetuar scroll para visualizar a pagina, propriedade 0 deixa o iframe passando por fora, recomendado usar a partir do 1*/
 
 }
 
