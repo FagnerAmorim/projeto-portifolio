@@ -248,12 +248,13 @@ article h2 {
   border-radius: 8px;
 }
 
-#projeto-container .titulo {
+#projeto-container .titulo a {
+  text-decoration: none;
   color: var(--destaque);
   transition: color 0.5s;
-}
+}/*propriedade para remover o sublinhado da propriedade ancora*/
 
-#projeto-container .titulo:hover {
+#projeto-container .titulo a:hover {
   color: var(--destaque-inverso);
 } /*propriedade a e a:hover para estilizar ao clicar e encostar o mouse e tambem para não alterar a cor apos o clik nas redes sociais*/
 
