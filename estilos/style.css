@@ -236,6 +236,10 @@ article h2 {
   cursor: pointer;
 }
 
+#projeto-container .periodo {
+  font-weight: bold;
+}
+
 #projeto-container .foto {
   width: 100%;
   aspect-ratio: 16/9;
